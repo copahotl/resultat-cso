@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Résultats - Jour 1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+  <header>
+    <h1>Résultats - Jour 1</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="#">Jour 2</a>
+      <a href="#">Jour 3</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Épreuve 1</h2>
+    <table id="table-e1" class="display"></table>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="js/afficher.js"></script>
+  <script>
+    afficher('data/jour1_epreuve1.csv', '#table-e1');
+  </script>
+</body>
+</html>
