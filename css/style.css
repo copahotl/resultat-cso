@@ -68,13 +68,26 @@ table.dataTable th, table.dataTable td {
 
 table.dataTable thead {
     font-family: 'Roboto', serif;
-    background-color: #4c61e6;
-    color: #2e2e2e;
+    background-color: #2e3fcf;
+    text-align: center;
+    color: white;
 }
 
 table.dataTable tbody tr:nth-child(even) {
     font-family: 'Roboto', serif;
     background-color: #edeffc;
+}
+
+/* Effet hover sur lignes */
+table.dataTable tbody tr:hover {
+    background-color: #dce2ff;
+    cursor: pointer;
+}
+
+/* Effet hover sur en-têtes */
+table.dataTable thead th:hover {
+    background-color: #1f33b8;
+    transition: background-color 0.2s ease;
 }
 
 .site-header {
