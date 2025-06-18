@@ -49,5 +49,26 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
+<script>
+  (function() {
+    const timestamp = new Date().getTime();
+
+    // Cache-busting pour les <link rel="stylesheet">
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href) {
+        link.setAttribute('href', `${href}${href.includes('?') ? '&' : '?'}v=${timestamp}`);
+      }
+    });
+
+    // Cache-busting pour les <script> avec un src
+    document.querySelectorAll('script[src]').forEach(script => {
+      const src = script.getAttribute('src');
+      if (src) {
+        script.setAttribute('src', `${src}${src.includes('?') ? '&' : '?'}v=${timestamp}`);
+      }
+    });
+  })();
+</script>
 </body>
 </html>

@@ -24,5 +24,26 @@
   <p>Vous trouverez ici les résultats complets des épreuves sur 3 jours.</p>
   <img src="https://eperon-kochersberg.com/wp-content/uploads/2022/05/cours-CSO-garon-2-scaled.jpg" alt="Saut d'obstacle" style="max-width:100%; margin-top: 2rem;">
 </main>
+<script>
+  (function() {
+    const timestamp = new Date().getTime();
+
+    // Cache-busting pour les <link rel="stylesheet">
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href) {
+        link.setAttribute('href', `${href}${href.includes('?') ? '&' : '?'}v=${timestamp}`);
+      }
+    });
+
+    // Cache-busting pour les <script> avec un src
+    document.querySelectorAll('script[src]').forEach(script => {
+      const src = script.getAttribute('src');
+      if (src) {
+        script.setAttribute('src', `${src}${src.includes('?') ? '&' : '?'}v=${timestamp}`);
+      }
+    });
+  })();
+</script>
 </body>
 </html>
