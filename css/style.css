@@ -61,11 +61,13 @@ table.dataTable th, table.dataTable td {
 }
 
 table.dataTable thead {
+    font-family: 'Roboto', serif;
     background-color: #4c61e6;
     color: #2e2e2e;
 }
 
 table.dataTable tbody tr:nth-child(even) {
+    font-family: 'Roboto', serif;
     background-color: #edeffc;
 }
 
@@ -73,7 +75,7 @@ table.dataTable tbody tr:nth-child(even) {
     background-color: #0e1a64;
     color: white;
     padding: 1.5rem 2rem;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
