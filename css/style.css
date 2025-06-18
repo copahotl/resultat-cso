@@ -48,7 +48,6 @@ h1 {
 h2 {
     font-family: 'Roboto', serif;
     text-align: center;
-    margin-top: 4rem;
     margin-bottom: 1rem;
     color: #000000;
 }
@@ -56,7 +55,7 @@ h2 {
 table.dataTable {
     font-family: 'Roboto', serif !important;
     width: 100% !important;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     border-collapse: collapse;
 }
 
