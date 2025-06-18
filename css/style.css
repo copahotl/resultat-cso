@@ -92,6 +92,7 @@ table.dataTable tbody tr:nth-child(even) {
     margin: 0;
     font-size: 1.8rem;
     color: white;
+    font-family: 'Roboto', serif;
 }
 
 .nav-cso {
@@ -149,6 +150,7 @@ table.dataTable tbody tr:nth-child(even) {
   margin-bottom: 1rem;
   font-size: 1.3rem;
   color: #0e1a64;
+  font-family: 'Roboto', serif;
 }
 
 .boutons-epreuves a {

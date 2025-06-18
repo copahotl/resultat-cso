@@ -7,7 +7,8 @@ function afficher(csvURL, sel) {
             responsive: true,
             paging: false,
             searching: true,
-            info: false
+            info: false,
+            order: [[0, 'asc']]
         });
     });
 }
