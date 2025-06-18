@@ -1,4 +1,3 @@
-<script>
 // Tri personnalisé : valeurs vides à la fin, robustes même si texte
 $.fn.dataTable.ext.order['empty-last'] = function(settings, col) {
     return this.api().column(col, { order: 'index' }).nodes().map(function(td) {
@@ -32,4 +31,3 @@ function afficher(csvURL, sel) {
         });
     });
 }
-</script>
