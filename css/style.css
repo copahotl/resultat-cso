@@ -53,12 +53,14 @@ h2 {
 }
 
 table.dataTable {
+    font-family: 'Roboto', serif !important;
     width: 100% !important;
     margin-bottom: 2rem;
     border-collapse: collapse;
 }
 
 table.dataTable th, table.dataTable td {
+    font-family: 'Roboto', serif !important;
     padding: 0.75rem;
     text-align: center;
     border: 1px solid #ccc;
