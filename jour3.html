@@ -70,5 +70,20 @@
     });
   })();
 </script>
+<script>
+  // Attendre que le DOM soit prêt et que les tableaux soient affichés
+  window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Attendre un peu que le contenu dynamique soit inséré
+      setTimeout(() => {
+        const target = document.querySelector(hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500); // délai de 500 ms pour laisser le temps à afficher() de charger les tableaux
+    }
+  });
+</script>
 </body>
 </html>
