@@ -48,6 +48,7 @@ h1 {
 h2 {
     font-family: 'Roboto', serif;
     text-align: center;
+    margin-top: 4rem;
     margin-bottom: 1rem;
     color: #000000;
 }
