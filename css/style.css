@@ -126,5 +126,44 @@ table.dataTable tbody tr:nth-child(even) {
 #backToTopBtn:hover {
   background-color: #333;
 }
-    
+
+.epreuves-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.carte-jour {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.carte-jour h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #0e1a64;
+}
+
+.boutons-epreuves a {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  background-color: #4c61e6;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.boutons-epreuves a:hover {
+  background-color: #2e3fcf;
+}
+
 }
