@@ -54,12 +54,12 @@ table.dataTable th, table.dataTable td {
 }
 
 table.dataTable thead {
-    background-color: #d6c9b2;
+    background-color: #1f37d6;
     color: #2e2e2e;
 }
 
 table.dataTable tbody tr:nth-child(even) {
-    background-color: #f9f7f3;
+    background-color: #a6b0f2;
 }
 
 .site-header {
